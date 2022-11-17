@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  width: 90px;
+  z-index: 100;
+  overflow: hidden;
+  transition: width 0.2s linear;
+}
+
+.logo {
+  text-align: center;
+  display: flex;
+  transition: all 0.5s ease;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  position: relative;
+  font-size: 14px;
+  display: table;
+  width: 300px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-item {
+  position: relative;
+}
+
+nav:hover {
+  width: 280px;
+  transition: all 0.5s ease;
+}
+.login {
+  position: absolute;
+  bottom: 30px;
+}
+.logout {
+  position: absolute;
+  bottom: 0;
+}
+.jumbotron {
+  margin-top: -100vh;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(img/bg.png);
+}
+#time {
+  font-size: 5em;
+}
+.judul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.about {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.about-1 {
+  background-image: url(img/Imaginary_Tree_Small.png);
+}
+.about-2 {
+  background-image: url(img/genshin.jpg);
+}
+.judul-about {
+  height: 30vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  width: 300px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+.deskripsi {
+  display: flex;
+  justify-content: center;
+}
+
+.row.about-det-1 {
+  display: flex;
+  margin-top: 50px;
+}
+.row.about-det-2 {
+  display: flex;
+}
+.row.about-det-3 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.text-det {
+  display: flex;
+  margin: auto !important;
+  padding: 0.5em !important;
+  text-align: left !important;
+  flex: 0 0 auto;
+  width: 33.3%;
+}
+
+/* detail img */
+.det-img {
+  background-size: cover;
+  position: relative;
+  height: 200px;
+  margin: auto !important;
+  flex: 0 0 auto;
+  width: 40%;
+}
+
+.det-img-1 {
+  background-image: url(img/honkai.png);
+}
+.det-img-2 {
+  background-image: url(img/genshinbg.png);
+}
+.det-img-3 {
+  background-image: url(img/koleb.jpg);
+}
+
+/* backgroudn blur */
+.text-center {
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+
+/* galeri */
+.gallery {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(img/gallery_background.png);
+}
+
+.gallery-list {
+  margin-top: 40px;
+  padding-top: 86px;
+  display: flex;
+  border-radius: 14px;
+}
+
+.list-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 90px;
+}
+
+.wallpaper-item {
+  width: 262px;
+  height: 164px;
+  border-radius: 6px;
+  padding: 10px 3px;
+  margin-right: 18px;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+
+.img-container {
+  justify-content: center;
+  display: flex;
+  width: 256px;
+  height: 144px;
+  overflow: hidden;
+}
+
+.img-container img {
+  display: block;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+/* merchandise */
+.merchandise {
+  height: 100vh;
+}
+
+.merchandise-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.merchandise-item {
+  display: flex;
+  width: 300px;
+}
+.det-img-merch-1 {
+  background-image: url(img/emblem.jpg);
+}
+.det-img-merch-2 {
+  background-image: url(img/kalender.jpg);
+}
+
+.img-merch {
+  background-size: cover;
+  position: relative;
+  height: 300px;
+  margin: auto !important;
+  width: 100%;
+  flex: 0 0 auto;
+}
+.det-merch {
+  display: flex;
+  margin: auto !important;
+  padding: 0.5em !important;
+  text-align: right !important;
+  flex: 0 0 auto;
+  width: 30%;
+}
