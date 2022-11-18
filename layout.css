@@ -241,3 +241,142 @@ nav:hover {
   flex: 0 0 auto;
   width: 30%;
 }
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item-container-merch {
+  position: relative;
+  margin: 24px;
+  width: 320px;
+  height: 570px;
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+.img-container-merch,
+.body-container-merch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 63%;
+}
+
+.img-container-merch img {
+  width: 100%;
+}
+
+.body-container-merch {
+  position: relative;
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: height linear 0.4s, opacity linear 0.2s;
+}
+
+.item-container-merch:hover .overlay {
+  opacity: 1;
+  height: 150px;
+}
+
+.merch-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  height: 450px;
+}
+
+.merch-title,
+.price {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 12px;
+  overflow: hidden;
+}
+.merch-title {
+  margin-bottom: -53px;
+}
+.info {
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.separator {
+  width: 20%;
+  height: 8px;
+  margin-bottom: 16px;
+  margin-top: 57px;
+}
+
+.additional-info {
+  margin-top: 12px;
+  padding: 28px;
+  height: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-bottom: 0;
+}
+
+.additional-info .info {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.info i {
+  font-size: 1.1em;
+  margin-right: 4px;
+}
+
+.action {
+  background-color: transparent;
+  position: absolute;
+  top: -256px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  outline: none;
+  cursor: pointer;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: background-color 0.4s, top 0.4s;
+}
+
+.item-container-merch:hover .action {
+  top: 50px;
+}
+
+.honkai-logo::after {
+  content: url(img/honkailogo.png);
+  position: sticky;
+  left: 0;
+  box-sizing: border-box;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.genshin-logo::after {
+  content: url(img/genshinlogo.png);
+  position: sticky;
+  left: 0;
+  box-sizing: border-box;
+  width: 20px !important;
+  height: 20px !important;
+}
