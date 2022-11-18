@@ -79,3 +79,52 @@ button {
 button:hover {
   background-color: #014c97;
 }
+
+.det-img-1,
+.det-img-2,
+.det-img-3 {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.item-container-merch {
+  background-color: #fff;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+}
+.overlay {
+  background-color: rgba(24, 83, 122, 0.6);
+}
+.merch-info {
+  background-color: #fff;
+}
+.merch-title,
+.price {
+  color: #18537a;
+}
+.separator {
+  background-color: #17537a;
+}
+.additional-info {
+  border-top: 1px solid #bbb;
+}
+.info i {
+  color: #18537a;
+}
+.action {
+  color: #fff;
+  border: 3px solid #fff;
+}
+.action:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.merch-genshin {
+  background-color: rgb(24, 24, 24);
+  color: azure;
+}
+
+.merch-genshin .merch-title,
+.price {
+  color: azure;
+}
+
+.item-container-merch-genshin {
+  background-color: rgb(24, 24, 24);
+}
